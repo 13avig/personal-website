@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Avi's Personal Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Avi Gupta">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panda Den</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<body>
+    <div class="container">
+        <!-- Landing Page Header -->
+        <header>
+            <h1>Welcome to Avi's Den</h1>
+            <p>Type some commands to get started!</p>
+        </header>
+
+        <!-- Panda Image Placeholder -->
+        <div class="panda-img">
+            <img src="panda.jpg" alt="Panda Image">
+        </div>
+
+        <!-- User Input Section -->
+        <div class="input-section">
+            <input type="text" id="user-input" placeholder="Type a command..." autofocus>
+            <button onclick="handleInput()">Go</button>
+        </div>
+
+        <!-- Content Section (This will change dynamically) -->
+        <div id="content-section">
+            <!-- Dynamic content will go here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

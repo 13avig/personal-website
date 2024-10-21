@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Action</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Back Button Style */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            background-image: url('back-icon.png'); /* Replace with your back icon */
+            background-size: cover;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        /* Table Layout for Images */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Each Image and Caption Block */
+        .image-item {
+            width: 30%; /* Each image takes up 30% of the row */
+            margin-bottom: 20px;
+        }
+
+        .image-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .image-caption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #000000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Back Button Icon -->
+        <button class="back-button" onclick="goBack()"></button>
+
+        <h1>In Action</h1>
+
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <!-- Row 1 -->
+            <div class="image-item">
+                <img src="inaction1.jpg" alt="In Action 1">
+                <div class="image-caption">
+                    my friends & i at our last school hangout
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="inaction4.jpg" alt="In Action 4">
+                <div class="image-caption">
+                    me, my father, my uncle, and my grandfather at a bull fight
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="inaction3.jpg" alt="In Action 3">
+                <div class="image-caption">
+                    my colleagues and i after working lunch service at st. francis
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="image-item">
+                <img src="inaction2.jpg" alt="In Action 2">
+                <div class="image-caption">
+                    my brother and i on my birthday
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="inaction5.jpg" alt="In Action 5">
+                <div class="image-caption">
+                    my family eating ice cream
+                </div>
+            </div>
+
+            <div class="image-item">
+                <img src="inaction6.jpg" alt="In Action 6">
+                <div class="image-caption">
+                    my mom and i at a market in spain
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+
+</body>
+</html>

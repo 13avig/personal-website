@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /*background-color: #e0f7e0;*/
+    color: #333;
+    background-image: url('wallpaper.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.55); /* Adds a translucent white background to make text readable */
+    border-radius: 15px;
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.55); /* Adds a translucent white background to make text readable */
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #2b2b2b;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.panda-img img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    animation: pandaAppear 2s ease-in-out;
+    opacity: 0.8;
+}
+
+/* Placeholder Panda Animation */
+@keyframes pandaAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url('back-icon.png'); /* Use your tiny icon image here */
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.desc-container {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.desc-container h1, .desc-container p, .desc-container ul {
+    margin-bottom: 20px;
+}
+
+.desc-container ul {
+    width: 600px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.desc-container ul li {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
